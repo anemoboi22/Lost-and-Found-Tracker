@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.Views.Profile"
+             Shell.FlyoutBehavior="Disabled"
+             Background="#D2B48C"
+             Title="Profile">
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding GoBackButton}" IconOverride="back.png"/>
+    </Shell.BackButtonBehavior>
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Label Text="Account Details"
+                   TextColor="Black"
+                   FontSize="24"
+                   AbsoluteLayout.LayoutBounds="50, 35"
+                   FontFamily="SSFRegular"
+                   FontAttributes="Bold"/>
+
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 85">
+                <Editor 
+                    x:Name="FullnameEntry"
+                    Placeholder="Fullname"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    FontSize="15"/>
+            </Frame>
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 185">
+                <Editor 
+                    x:Name="EmailEntry"
+                    Placeholder="Email"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    Keyboard="Email"
+                    FontSize="15"/>
+            </Frame>
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 285">
+                <Editor 
+                    x:Name="CollegeDepartmentEntry"
+                    Placeholder="College Department"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    FontSize="15"/>
+            </Frame>
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 385">
+                <Editor 
+                    x:Name="RoomNumberEntry"
+                    Placeholder="Room#"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    FontSize="15"/>
+            </Frame>
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 485">
+                <Editor 
+                    x:Name="StudentIdEntry"
+                    Placeholder="Student ID#"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    FontSize="15"/>
+            </Frame>
+
+            <Button Text="Save"
+                    TextColor="Black"
+                    BackgroundColor="#EADDCA"
+                    AbsoluteLayout.LayoutBounds="240, 585"
+                    CornerRadius="20"
+                    FontSize="15"
+                    Clicked="Save_Button_Clicked"/>
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

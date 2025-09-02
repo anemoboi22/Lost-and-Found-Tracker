@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.Views.UserDetailsView"
+             BackgroundColor="#D2B48C"
+             Shell.FlyoutBehavior="Disabled"
+             Title="User Details">
+    
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding GoBackButton}" IconOverride="back.png"/>
+    </Shell.BackButtonBehavior>
+
+    <ContentPage.Content>
+        <AbsoluteLayout Padding="10">
+            <Frame BackgroundColor="LightGray" WidthRequest="300" CornerRadius="15" AbsoluteLayout.LayoutBounds="0, 60">
+                <AbsoluteLayout>
+                    <Image Source="LOST" HeightRequest="80" BackgroundColor="Transparent" AbsoluteLayout.LayoutBounds="5, 25"/>  
+                    <Frame CornerRadius="15" HasShadow="True" AbsoluteLayout.LayoutBounds="100, 20" WidthRequest="170" HeightRequest="50">
+                        <AbsoluteLayout>
+                            <Label Text="FULLNAME:" TextColor="Black" FontSize="Small" FontAttributes="Bold"/>
+                            <Label x:Name="FullnameLabel" TextColor="Black" FontSize="Small" AbsoluteLayout.LayoutBounds="10, 25"/>
+                        </AbsoluteLayout>
+                    </Frame>
+                    <Label Text="If you found my items, please" TextColor="Black" WidthRequest="250" FontSize="Small" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="100, 120"/>
+                    <Label Text="look me at:" TextColor="Black" WidthRequest="250" FontSize="Small" FontAttributes="Bold" AbsoluteLayout.LayoutBounds="165, 140"/>
+                    <Frame CornerRadius="15" HasShadow="True" AbsoluteLayout.LayoutBounds="0, 180" WidthRequest="265" HeightRequest="20">
+                        <AbsoluteLayout>
+                            <Label Text="STUDENT ID#:" TextColor="Black" FontSize="Small" FontAttributes="Bold"/>
+                            <Label x:Name="StudentIdLabel" TextColor="Black" FontSize="Small" AbsoluteLayout.LayoutBounds="95, 0"/>
+                        </AbsoluteLayout>              
+                    </Frame>
+                    <Frame CornerRadius="15" HasShadow="True" AbsoluteLayout.LayoutBounds="0, 250" WidthRequest="265" HeightRequest="20">
+                        <AbsoluteLayout>
+                            <Label Text="COLLEGE DEPARTMENT:" TextColor="Black" FontSize="Small" FontAttributes="Bold"/>
+                            <Label x:Name="CollegeDepartmentLabel" TextColor="Black" FontSize="Small" AbsoluteLayout.LayoutBounds="155, 0"/>
+                        </AbsoluteLayout>
+                    </Frame>
+                    <Frame CornerRadius="15" HasShadow="True" AbsoluteLayout.LayoutBounds="0, 320" WidthRequest="265" HeightRequest="20">
+                        <AbsoluteLayout>
+                            <Label Text="ROOM#:" TextColor="Black" FontSize="Small" FontAttributes="Bold"/>
+                            <Label x:Name="RoomNumberLabel" TextColor="Black" FontSize="Small" AbsoluteLayout.LayoutBounds="62, 0"/>
+                        </AbsoluteLayout>
+                    </Frame>
+
+                </AbsoluteLayout>
+            </Frame>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

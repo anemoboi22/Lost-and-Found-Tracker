@@ -1,0 +1,88 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.Views.SignupPage"
+             Background="#D2B48C"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.PresentationMode="Modal">
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding GoBackButton}" IconOverride="back.png"/>
+    </Shell.BackButtonBehavior>
+
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Label Text="Create Account"
+                   TextColor="Black"
+                   FontSize="24"
+                   AbsoluteLayout.LayoutBounds="50, 50"
+                   FontFamily="SSFRegular"
+                   FontAttributes="Bold"/>
+
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 100">
+                <Entry 
+                    x:Name="FullnameEntry"
+                    Placeholder="Fullname"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    FontSize="15"/>
+            </Frame>
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 200">
+                <Entry 
+                    x:Name="EmailEntry"
+                    Placeholder="Email"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    Keyboard="Email"
+                    FontSize="15"/>
+            </Frame>
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 300">
+                <Entry 
+                    x:Name="PasswordEntry"
+                    Placeholder="Password"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    FontSize="15"
+                    IsPassword="True"/>
+            </Frame>
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 400">
+                <Entry 
+                    x:Name="ConfirmPasswordEntry"
+                    Placeholder="Confirm Password"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    FontSize="15"
+                    IsPassword="True"/>
+            </Frame>
+            <Button Text="Signup"
+                    TextColor="Black"
+                    BackgroundColor="#EADDCA"
+                    AbsoluteLayout.LayoutBounds="240, 500"
+                    CornerRadius="20"
+                    Clicked="Signup_Button_Clicked"/>
+
+            <Label Text="Already have an account?"
+                   TextColor="Black"
+                   AbsoluteLayout.LayoutBounds="60, 640"/>
+            <Label Text="Sign in"
+                   TextColor="GhostWhite"
+                   AbsoluteLayout.LayoutBounds="250, 640">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="Sign_TapGestureRecognizer"/>
+                </Label.GestureRecognizers>
+            </Label>
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.Views.LoginPage"
+             Background="#D2B48C"
+             Shell.FlyoutBehavior="Disabled"
+             Shell.NavBarIsVisible="False">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image 
+                Source="LOST"
+                HeightRequest="160"
+                AbsoluteLayout.LayoutBounds="100,60"
+                />
+            <Label Text="Lost &amp; Found"
+                   TextColor="Black"
+                   FontSize="20"
+                   AbsoluteLayout.LayoutBounds="117, 225"
+                   FontAttributes="Bold"/>
+            <Label Text="Where your lost item can be found"
+                   TextColor="LightGray"
+                   FontSize="Small"
+                   AbsoluteLayout.LayoutBounds="55, 245"/>
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 300">
+                <Entry 
+                    Placeholder="Email"
+                    x:Name="EmailEntry"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    Keyboard="Email"
+                    FontSize="15"/>
+            </Frame>
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 400">
+                <Entry 
+                    Placeholder="Password"
+                    x:Name="PasswordEntry"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    FontSize="15"
+                    IsPassword="True"/>
+            </Frame>
+
+            <Button Text="Login"
+                    TextColor="Black"
+                    BackgroundColor="#EADDCA"
+                    AbsoluteLayout.LayoutBounds="240, 500"
+                    CornerRadius="20"
+                    Clicked="Save_Button_Clicked"/>
+
+            <Label Text="Don't have an account?"
+                   TextColor="Black"
+                   AbsoluteLayout.LayoutBounds="66, 696"/>
+            <Label Text="Sign up"
+                   TextColor="GhostWhite"
+                   AbsoluteLayout.LayoutBounds="238, 696">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="Sign_TapGestureRecognizer"/>
+                    </Label.GestureRecognizers>
+            </Label>
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

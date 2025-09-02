@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.Views.CreatePostPage"
+             Shell.FlyoutBehavior="Disabled"
+             Background="#D2B48C"
+             Title="Create Post">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Post"
+                     Command="{Binding PostCommand}"
+                     Priority="0"
+                     Order="Primary"/>
+    </ContentPage.ToolbarItems>
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding GoBackButton}" IconOverride="back.png"/>
+    </Shell.BackButtonBehavior>
+
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <AbsoluteLayout>
+                <Image Source="LOST" 
+                       HeightRequest="65"
+                       AbsoluteLayout.LayoutBounds="15, 15"/>
+                <Label x:Name="NameText"
+                       AbsoluteLayout.LayoutBounds="90, 20"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       TextColor="Black"/>
+                <Label Text="ID#:"
+                       AbsoluteLayout.LayoutBounds="90, 40"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       TextColor="LightGray"/>
+                <Label x:Name="IDText"
+                       AbsoluteLayout.LayoutBounds="125, 40"
+                       FontSize="15"
+                       FontAttributes="Bold"
+                       TextColor="LightGray"/>
+            </AbsoluteLayout>
+
+            <Editor x:Name="PostEditor"
+                    Placeholder="What to post?"
+                    HeightRequest="100"
+                    PlaceholderColor="Gray"
+                    TextColor="Black"
+                    BackgroundColor="White"
+                    Margin="0,10,0,0"/>
+
+            <ScrollView>
+                <StackLayout x:Name="ImagesStack"
+                         Spacing="10">
+                </StackLayout>
+            </ScrollView>
+
+            <Frame AbsoluteLayout.LayoutBounds="0, 618, 360, 50"
+                   HasShadow="True"
+                   BackgroundColor="LightGray"
+                   Padding="10">
+                <AbsoluteLayout>
+                    <Image 
+                            Source="album"
+                            AbsoluteLayout.LayoutBounds="90, 0, 30, 30"
+                            BackgroundColor="Transparent"/>
+                    <Label Text="Add Photos"
+                               FontSize="18"
+                               AbsoluteLayout.LayoutBounds="130, 4"
+                               FontAttributes="Bold"
+                               TextColor="Black"/>
+                </AbsoluteLayout>
+                <Frame.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnPhotoTapped" />
+                </Frame.GestureRecognizers>
+            </Frame>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

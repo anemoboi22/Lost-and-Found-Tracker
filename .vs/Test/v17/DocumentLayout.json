@@ -1,0 +1,109 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Jan Benedict\\source\\repos\\Test\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{68D10737-766B-45C3-A54E-1A2782F7A072}|Test\\Test\\Test.csproj|c:\\users\\jan benedict\\source\\repos\\test\\test\\test\\services\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D10737-766B-45C3-A54E-1A2782F7A072}|Test\\Test\\Test.csproj|solutionrelative:test\\test\\services\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68D10737-766B-45C3-A54E-1A2782F7A072}|Test\\Test\\Test.csproj|c:\\users\\jan benedict\\source\\repos\\test\\test\\test\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D10737-766B-45C3-A54E-1A2782F7A072}|Test\\Test\\Test.csproj|solutionrelative:test\\test\\models\\post.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68D10737-766B-45C3-A54E-1A2782F7A072}|Test\\Test\\Test.csproj|c:\\users\\jan benedict\\source\\repos\\test\\test\\test\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D10737-766B-45C3-A54E-1A2782F7A072}|Test\\Test\\Test.csproj|solutionrelative:test\\test\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68D10737-766B-45C3-A54E-1A2782F7A072}|Test\\Test\\Test.csproj|c:\\users\\jan benedict\\source\\repos\\test\\test\\test\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{68D10737-766B-45C3-A54E-1A2782F7A072}|Test\\Test\\Test.csproj|solutionrelative:test\\test\\app.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{68D10737-766B-45C3-A54E-1A2782F7A072}|Test\\Test\\Test.csproj|c:\\users\\jan benedict\\source\\repos\\test\\test\\test\\appshell.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}",
+      "RelativeMoniker": "D:0:0:{68D10737-766B-45C3-A54E-1A2782F7A072}|Test\\Test\\Test.csproj|solutionrelative:test\\test\\appshell.xaml||{2974C621-7033-421A-B08A-11D27B021D1B}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\Jan Benedict\\source\\repos\\Test\\Test\\Test\\Services\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "Test\\Test\\Services\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\Jan Benedict\\source\\repos\\Test\\Test\\Test\\Services\\DatabaseHelper.cs",
+              "RelativeToolTip": "Test\\Test\\Services\\DatabaseHelper.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACgAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T17:15:58.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\Jan Benedict\\source\\repos\\Test\\Test\\Test\\Models\\User.cs",
+              "RelativeDocumentMoniker": "Test\\Test\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\Jan Benedict\\source\\repos\\Test\\Test\\Test\\Models\\User.cs",
+              "RelativeToolTip": "Test\\Test\\Models\\User.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T17:11:39.886Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Post.cs",
+              "DocumentMoniker": "C:\\Users\\Jan Benedict\\source\\repos\\Test\\Test\\Test\\Models\\Post.cs",
+              "RelativeDocumentMoniker": "Test\\Test\\Models\\Post.cs",
+              "ToolTip": "C:\\Users\\Jan Benedict\\source\\repos\\Test\\Test\\Test\\Models\\Post.cs",
+              "RelativeToolTip": "Test\\Test\\Models\\Post.cs",
+              "ViewState": "AQIAAAsAAAAAAAAAAAAswB0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T17:11:32.953Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\Jan Benedict\\source\\repos\\Test\\Test\\Test\\AppShell.xaml",
+              "RelativeDocumentMoniker": "Test\\Test\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\Jan Benedict\\source\\repos\\Test\\Test\\Test\\AppShell.xaml",
+              "RelativeToolTip": "Test\\Test\\AppShell.xaml",
+              "ViewState": "AQIAAEkAAAAAAAAAAAAkwFgAAABdAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-05-25T16:49:32.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "App.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Jan Benedict\\source\\repos\\Test\\Test\\Test\\App.xaml.cs",
+              "RelativeDocumentMoniker": "Test\\Test\\App.xaml.cs",
+              "ToolTip": "C:\\Users\\Jan Benedict\\source\\repos\\Test\\Test\\Test\\App.xaml.cs",
+              "RelativeToolTip": "Test\\Test\\App.xaml.cs",
+              "ViewState": "AQIAABIAAAAAAAAAAAAYwB0AAAAnAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-25T15:40:08.676Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

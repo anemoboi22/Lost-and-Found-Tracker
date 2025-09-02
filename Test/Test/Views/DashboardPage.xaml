@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Test.Views"
+             x:Class="Test.Views.DashboardPage"
+             BackgroundColor="#D2B48C"
+             Title="Lost &amp; Found">
+
+    <ContentPage.Content>
+        <AbsoluteLayout Padding="10">
+                <Frame CornerRadius="20" 
+                       HasShadow="True"
+                       BackgroundColor="LightGray"
+                       AbsoluteLayout.LayoutBounds="0, 0, 340, 90">
+                    <AbsoluteLayout>
+                        <Image Source="LOST" HeightRequest="40" BackgroundColor="Transparent" AbsoluteLayout.LayoutBounds="-6, 5"/>
+                        <Frame CornerRadius="40" 
+                               HasShadow="True"
+                               HeightRequest="40"
+                               Padding="5"
+                               AbsoluteLayout.LayoutBounds="42 , 1, 260, 50">
+                            <AbsoluteLayout>
+                                <Label Text="What to post?" 
+                                       FontSize="14" 
+                                       TextColor="Gray"
+                                       AbsoluteLayout.LayoutBounds="75, 10"/>
+                            </AbsoluteLayout>
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="OnEditorTapped" />
+                            </Frame.GestureRecognizers>
+                        </Frame>
+                    </AbsoluteLayout>
+                </Frame>
+                <Frame AbsoluteLayout.LayoutBounds="0, 100, 340, 550" BackgroundColor="White" CornerRadius="20" Padding="5">
+                    <AbsoluteLayout>
+                        <CollectionView  ItemsSource="{Binding}">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout>
+                                        <Frame CornerRadius="15" Margin="5" BackgroundColor="LightGray">
+                                            <StackLayout>
+                                                <AbsoluteLayout>
+                                                    <ImageButton Source="LOST.png" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start" VerticalOptions="Center" Clicked="OnUserDetailsViewClicked"/>
+                                                    <Label Text="{Binding UserName}" TextColor ="Black" FontSize="Medium" AbsoluteLayout.LayoutBounds="45, 0"/>
+                                                <Label Text="{Binding CreationDate, StringFormat='{0:MM/dd/yyyy hh:mm tt}'}" TextColor="Black" FontSize="Small" AbsoluteLayout.LayoutBounds="45, 18"/>
+                                                    <ImageButton Source="manage.png" WidthRequest="30" HeightRequest="30" AbsoluteLayout.LayoutBounds="260, -15" BackgroundColor="Transparent" Clicked="OnDeleteButtonClicked"/>
+                                                </AbsoluteLayout>
+                                                <Label Text="{Binding Content}" FontSize="Small" Margin="0,10,0,0" TextColor="Black"/>
+                                                <CarouselView ItemsSource="{Binding ImagePaths}" HeightRequest="200">
+                                                    <CarouselView.ItemTemplate>
+                                                        <DataTemplate>
+                                                            <Image Source="{Binding .}" Aspect="AspectFill"/>
+                                                        </DataTemplate>
+                                                    </CarouselView.ItemTemplate>
+                                                </CarouselView>
+                                            </StackLayout>
+                                        </Frame>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </AbsoluteLayout>
+                </Frame>
+            </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

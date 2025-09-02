@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.Views.SplashScreen"
+             Background="#D2B48C">
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Image 
+        Source="LOST"
+        HeightRequest="160"
+        AbsoluteLayout.LayoutBounds="100,200"
+        />
+            <Label Text="Lost &amp; Found"
+           TextColor="Black"
+           FontSize="20"
+           AbsoluteLayout.LayoutBounds="117, 375"
+           FontAttributes="Bold"/>
+           <Label Text="Where your lost item can be found"
+           TextColor="LightGray"
+           FontSize="Small"
+           AbsoluteLayout.LayoutBounds="55, 400"/>
+
+           <ActivityIndicator IsRunning="True" Color= "White" AbsoluteLayout.LayoutBounds="155, 450, 50, 50"/>
+
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>

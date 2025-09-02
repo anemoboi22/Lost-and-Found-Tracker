@@ -1,0 +1,80 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Test.Views.Setting"
+             Shell.FlyoutBehavior="Disabled"
+             Background="#D2B48C"
+             Title="Settings">
+
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior Command="{Binding GoBackButton}" IconOverride="back.png"/>
+    </Shell.BackButtonBehavior>
+    
+    <ContentPage.Content>
+        <AbsoluteLayout>
+            <Label Text="Change Password"
+                   TextColor="Black"
+                   FontSize="24"
+                   AbsoluteLayout.LayoutBounds="50, 35"
+                   FontFamily="SSFRegular"
+                   FontAttributes="Bold"/>
+
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 85">
+                <Entry 
+                    Placeholder="Old Password"
+                    x:Name="oldPasswordEntry"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    FontSize="15"
+                    IsPassword="True"/>
+            </Frame>
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 185">
+                <Entry 
+                    Placeholder="New Password"
+                    x:Name="newPasswordEntry"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    FontSize="15"
+                    IsPassword="True"/>
+            </Frame>
+            <Frame CornerRadius="15"
+                   HasShadow="True"
+                   AbsoluteLayout.LayoutBounds="38, 285">
+                <Entry 
+                    Placeholder="Confirm New Password"
+                    x:Name="confirmPasswordEntry"
+                    TextColor="Black"
+                    PlaceholderColor="LightGray"
+                    WidthRequest="250"
+                    FontSize="15"
+                    IsPassword="True"/>
+            </Frame>
+
+            <Button Text="Save"
+                    TextColor="Black"
+                    BackgroundColor="#EADDCA"
+                    AbsoluteLayout.LayoutBounds="240, 385"
+                    CornerRadius="20"
+                    Clicked="Save_Button_Clicked"/>
+            <Label Text="Account Deletion"
+                   TextColor="Black"
+                   FontSize="24"
+                   AbsoluteLayout.LayoutBounds="50, 480"
+                   FontFamily="SSFRegular"
+                   FontAttributes="Bold"/>
+            <Button Text="Delete"
+                    TextColor="Black"
+                    BackgroundColor="#EADDCA"
+                    WidthRequest="210"
+                    AbsoluteLayout.LayoutBounds="50, 520"
+                    CornerRadius="20"
+                    Clicked="Delete_Button_Clicked"/>   
+        </AbsoluteLayout>
+    </ContentPage.Content>
+</ContentPage>
