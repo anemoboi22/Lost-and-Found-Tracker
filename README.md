@@ -3,4 +3,4 @@
 <br>
 Programming Language used: Xamarin C#, XAML
 <br>
-Database: SQLIte
+Database: SQLite
